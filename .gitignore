@@ -1,3 +1,7 @@
+# Vagrant Ignore List
+/.vagrant
+
+# Ruby & Rails Ignore List
 *.rbc
 capybara-*.html
 .rspec
