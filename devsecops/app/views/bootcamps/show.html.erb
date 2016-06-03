@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bootcamp.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%=raw @bootcamp.description %>
+</p>
+
+<p>
+  <strong>Dates:</strong>
+  <%= @bootcamp.dates %>
+</p>
+
+<%= link_to 'Edit', edit_bootcamp_path(@bootcamp) %> |
+<%= link_to 'Back', bootcamps_path %>
