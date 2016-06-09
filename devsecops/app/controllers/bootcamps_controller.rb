@@ -4,7 +4,6 @@ class BootcampsController < ApplicationController
   # GET /bootcamps
   # GET /bootcamps.json
   def index
-    @bootcamps = Bootcamp.all
     if params[:search].to_s != ''
       @bootcamps = Bootcamp.where("name LIKE '%#{params[:search]}%'")
     else
